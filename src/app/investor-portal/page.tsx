@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import Header from '@/components/layout/Header'
 
 export default function InvestorPortal() {
@@ -21,11 +22,17 @@ export default function InvestorPortal() {
       
       {/* Background Image */}
       <div className="fixed inset-0 -z-10">
-        <img
-          src="https://images4.imagebam.com/3f/a4/06/MEZV0NR_o.jpg"
-          alt="Background"
-          className="w-full h-full object-cover"
-        />
+        <div className="relative w-full h-full">
+          <Image
+            src="https://images4.imagebam.com/3f/a4/06/MEZV0NR_o.jpg"
+            alt="Background"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
+            quality={85}
+          />
+        </div>
         <div className="absolute inset-0 bg-black/50" />
       </div>
 
