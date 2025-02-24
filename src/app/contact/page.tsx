@@ -29,7 +29,7 @@ export default function Contact() {
           <h2 className="text-2xl font-light text-gray-800 mb-6">Contact Us</h2>
           
           <form 
-            action="https://formspree.io/f/mgaevklj"
+            action="https://formspree.io/f/mqaevklj"
             method="POST"
             className="space-y-6"
           >
