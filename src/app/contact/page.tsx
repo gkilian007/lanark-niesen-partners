@@ -16,72 +16,68 @@ export default function Contact() {
       <Header />
       
       {/* Background Image */}
-      <div className="fixed inset-0 -z-10">
-        <div className="relative w-full h-full">
-          <Image
-            src="https://images4.imagebam.com/b8/2a/eb/MEZV0H3_o.jpg"
-            alt="Background"
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover"
-            quality={85}
-          />
-        </div>
-        <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0">
+        <Image
+          src="https://images4.imagebam.com/72/c5/55/MEZUWFE_o.jpg"
+          alt="Mountain landscape"
+          fill
+          priority
+          sizes="100vw"
+          quality={75}
+          className="object-cover"
+          placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx4eHRoaHSQtJSAyVC08MTAxMTIwPURBPj1HQTY4RjE5TU9PQEdGRVBCR0hDRkFATEr/2wBDAR"
+        />
       </div>
-
-      <div className="relative flex items-center justify-center min-h-screen px-4 py-24">
-        <div className="w-full max-w-md bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-8 font-poppins">
-          <h2 className="text-2xl font-light text-gray-800 mb-6">Contact Us</h2>
+      <div className="absolute inset-0 bg-black/30" />
+      
+      <div className="relative min-h-screen flex items-center justify-center p-4">
+        <div className="w-full max-w-md bg-white/95 backdrop-blur-sm p-8 rounded-lg shadow-lg">
+          <h1 className="text-3xl font-light text-gray-900 mb-6">Contact Us</h1>
           
-          <form 
-            action="https://formspree.io/f/mqaevklj"
-            method="POST"
-            className="space-y-6"
-          >
+          <form action="https://formspree.io/f/mqaevklj" method="POST" className="space-y-4">
             <div>
-              <label htmlFor="name" className="block text-sm text-gray-700 mb-1">
+              <label htmlFor="name" className="block text-sm font-medium text-gray-700">
                 Name
               </label>
               <input
                 type="text"
-                id="name"
                 name="name"
+                id="name"
                 required
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white"
+                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
               />
             </div>
-
+            
             <div>
-              <label htmlFor="email" className="block text-sm text-gray-700 mb-1">
+              <label htmlFor="email" className="block text-sm font-medium text-gray-700">
                 Email
               </label>
               <input
                 type="email"
-                id="email"
                 name="email"
+                id="email"
                 required
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white"
+                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
               />
             </div>
-
+            
             <div>
-              <label htmlFor="message" className="block text-sm text-gray-700 mb-1">
+              <label htmlFor="message" className="block text-sm font-medium text-gray-700">
                 Message
               </label>
               <textarea
-                id="message"
                 name="message"
-                required
+                id="message"
                 rows={4}
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white"
+                required
+                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
               />
             </div>
-
+            
             <button
               type="submit"
-              className="w-full bg-gray-900 text-white py-2 px-4 rounded-md hover:bg-gray-800 transition-colors font-medium"
+              className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
             >
               Send Message
             </button>
