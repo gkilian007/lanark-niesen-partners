@@ -23,14 +23,14 @@ export default function Header() {
   const isLightPage = pathname === '/investor-portal' || pathname === '/contact'
 
   return (
-    <header className="fixed w-full -top-6 z-50 flex justify-between items-center px-6">
-      <Link href="/" className="flex items-center relative w-[400px] h-48">
+    <header className="fixed w-full -top-6 z-50 flex justify-between items-center px-4 md:px-6">
+      <Link href="/" className="flex items-center relative w-[200px] h-24 md:w-[400px] md:h-48">
         <Image
           src="https://images4.imagebam.com/12/56/94/MEZV0LM_o.png"
           alt="Lanark Niesen Partners Logo"
           fill
           priority
-          sizes="400px"
+          sizes="(max-width: 768px) 200px, 400px"
           className="object-contain"
           quality={90}
         />
@@ -40,29 +40,29 @@ export default function Header() {
         className="relative group"
       >
         <button
-          className={`flex items-center gap-2 px-4 py-2 backdrop-blur-sm rounded-lg transition-all ${
+          className={`flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 backdrop-blur-sm rounded-lg transition-all ${
             isLightPage 
               ? 'text-gray-800 bg-gray-200/80 group-hover:bg-gray-300/80' 
               : 'text-white bg-white/20 group-hover:bg-white/30'
           }`}
           onMouseEnter={() => setIsMenuOpen(true)}
         >
-          {isMenuOpen ? <X size={20} /> : <MenuIcon size={20} />}
-          <span>Menu</span>
+          {isMenuOpen ? <X size={18} className="md:w-5 md:h-5" /> : <MenuIcon size={18} className="md:w-5 md:h-5" />}
+          <span className="text-sm md:text-base">Menu</span>
         </button>
 
         <nav 
-          className={`absolute top-12 right-0 bg-white/95 backdrop-blur-sm rounded-lg shadow-lg p-6 min-w-[200px] transition-all duration-200 ${
+          className={`absolute top-10 md:top-12 right-0 bg-white/95 backdrop-blur-sm rounded-lg shadow-lg p-4 md:p-6 min-w-[180px] md:min-w-[200px] transition-all duration-200 ${
             isMenuOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible translate-y-[-10px]'
           }`}
           onMouseEnter={() => setIsMenuOpen(true)}
           onMouseLeave={() => setIsMenuOpen(false)}
         >
-          <ul className="space-y-2">
+          <ul className="space-y-1 md:space-y-2">
             <li>
               <Link 
                 href="/" 
-                className={getLinkClassName('/')}
+                className={`${getLinkClassName('/')} text-sm md:text-base`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
@@ -71,7 +71,7 @@ export default function Header() {
             <li>
               <Link 
                 href="/about" 
-                className={getLinkClassName('/about')}
+                className={`${getLinkClassName('/about')} text-sm md:text-base`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
@@ -80,7 +80,7 @@ export default function Header() {
             <li>
               <Link 
                 href="/contact" 
-                className={getLinkClassName('/contact')}
+                className={`${getLinkClassName('/contact')} text-sm md:text-base`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact
@@ -89,7 +89,7 @@ export default function Header() {
             <li>
               <Link 
                 href="/investor-portal" 
-                className={getLinkClassName('/investor-portal')}
+                className={`${getLinkClassName('/investor-portal')} text-sm md:text-base`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Investor Portal
