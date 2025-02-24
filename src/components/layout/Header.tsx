@@ -23,7 +23,7 @@ export default function Header() {
   const isLightPage = pathname === '/investor-portal' || pathname === '/contact'
 
   return (
-    <header className="fixed w-full top-2 z-50 flex justify-between items-center px-6">
+    <header className="fixed w-full -top-3 z-50 flex justify-between items-center px-6">
       <Link href="/" className="flex items-center relative w-[400px] h-48">
         <Image
           src="https://images4.imagebam.com/12/56/94/MEZV0LM_o.png"
