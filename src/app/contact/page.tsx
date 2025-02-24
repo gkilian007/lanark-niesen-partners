@@ -10,31 +10,6 @@ export default function Contact() {
     message: ''
   })
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    
-    try {
-      const response = await fetch('https://formspree.io/f/paeltuyo@gmail.com', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      })
-
-      if (!response.ok) {
-        throw new Error('Failed to send message')
-      }
-
-      // Clear the form
-      setFormData({ name: '', email: '', message: '' })
-      alert('Message sent successfully!')
-    } catch (error) {
-      console.error('Error sending message:', error)
-      alert('Failed to send message. Please try again.')
-    }
-  }
-
   return (
     <main className="relative min-h-screen">
       <Header />
@@ -54,7 +29,7 @@ export default function Contact() {
           <h2 className="text-2xl font-light text-gray-800 mb-6">Contact Us</h2>
           
           <form 
-            action="https://formspree.io/f/paeltuyo@gmail.com" 
+            action="https://formspree.io/f/mgaevklj"
             method="POST"
             className="space-y-6"
           >
@@ -68,8 +43,6 @@ export default function Contact() {
                 name="name"
                 required
                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white"
-                value={formData.name}
-                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
               />
             </div>
 
@@ -83,8 +56,6 @@ export default function Contact() {
                 name="email"
                 required
                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white"
-                value={formData.email}
-                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
               />
             </div>
 
@@ -98,8 +69,6 @@ export default function Contact() {
                 required
                 rows={4}
                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white"
-                value={formData.message}
-                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
               />
             </div>
 
