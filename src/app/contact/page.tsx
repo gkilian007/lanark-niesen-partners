@@ -18,7 +18,7 @@ export default function Contact() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="https://images4.imagebam.com/72/c5/55/MEZUWFE_o.jpg"
+          src="https://images4.imagebam.com/0b/23/ae/MEZVX4X_o.jpg"
           alt="Mountain landscape"
           fill
           priority
