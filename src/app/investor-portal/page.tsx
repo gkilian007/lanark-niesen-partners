@@ -39,12 +39,12 @@ export default function InvestorPortal() {
       </div>
 
       <div className="flex items-center justify-center min-h-screen px-4">
-        <div className="w-full max-w-md bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-8 font-poppins">
-          <h2 className="text-2xl font-light text-gray-800 mb-6">Investor Portal</h2>
+        <div className="w-full max-w-md bg-white/95 backdrop-blur-sm rounded-lg shadow-lg p-8">
+          <h1 className="text-3xl font-light text-gray-900 mb-6">Investor Portal</h1>
           
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <label htmlFor="username" className="block text-sm text-gray-700 mb-1">
+              <label htmlFor="username" className="block text-sm font-medium text-gray-700 mb-1">
                 Username
               </label>
               <input
@@ -58,7 +58,7 @@ export default function InvestorPortal() {
             </div>
             
             <div>
-              <label htmlFor="password" className="block text-sm text-gray-700 mb-1">
+              <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-1">
                 Password
               </label>
               <input
