@@ -49,11 +49,16 @@ export default function Home() {
             <h2 className="text-xl md:text-2xl text-white font-light">
               Modern Perspective. Timeless Values. Relentless Execution.
             </h2>
-            <Link 
-              href="/contact"
-              className="inline-block px-8 py-3 text-lg bg-white text-gray-900 rounded-lg hover:bg-gray-100 transition-colors"
-            >
-              Contact Us
+            <Link href="/" className="flex items-center relative w-[120px] h-14 md:w-[180px] md:h-20">
+              <Image
+                src="https://images4.imagebam.com/9f/62/cd/MEZVWT5_o.png"
+                alt="Lanark Niesen Partners Logo"
+                fill
+                priority
+                sizes="(max-width: 768px) 120px, 180px"
+                className="object-contain"
+                quality={90}
+              />
             </Link>
           </div>
         </div>
