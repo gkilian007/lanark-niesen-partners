@@ -26,7 +26,7 @@ export default function Header() {
     <header className="fixed w-full -top-3 md:-top-6 z-50 flex justify-between items-center px-4 md:px-6">
       <Link href="/" className="flex items-center relative w-[200px] h-24 md:w-[400px] md:h-48">
         <Image
-          src="https://images4.imagebam.com/9f/62/cd/MEZVWT5_o.png"
+          src="https://images4.imagebam.com/dc/d5/9e/MEZY599_o.png"
           alt="Lanark Niesen Partners Logo"
           fill
           priority
