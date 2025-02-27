@@ -14,8 +14,8 @@ export default function Header() {
     const isActive = pathname === path
     return `block transition-colors ${
       isActive 
-        ? 'text-gray-900 font-medium bg-gray-100/90 px-4 py-2 rounded-md' 
-        : 'text-gray-800 hover:text-black hover:bg-gray-100/70 px-4 py-2 rounded-md'
+        ? 'text-white font-medium border-b-2 border-white px-4 py-2 rounded-md' 
+        : 'text-white hover:text-gray-200 hover:border-b border-white/70 px-4 py-2 rounded-md'
     }`
   }
 
@@ -52,7 +52,7 @@ export default function Header() {
         </button>
 
         <nav 
-          className={`absolute top-10 md:top-12 right-0 bg-white/50 backdrop-blur-sm rounded-lg shadow-lg p-4 md:p-6 min-w-[180px] md:min-w-[200px] transition-all duration-200 ${
+          className={`absolute top-10 md:top-12 right-0 bg-white/30 backdrop-blur-sm rounded-lg shadow-lg p-4 md:p-6 min-w-[180px] md:min-w-[200px] transition-all duration-200 ${
             isMenuOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible translate-y-[-10px]'
           }`}
           onMouseEnter={() => setIsMenuOpen(true)}
