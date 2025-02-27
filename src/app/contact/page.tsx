@@ -37,113 +37,113 @@ export default function Contact() {
       {/* Dark blue background for bottom 2/3 */}
       <div className="relative bg-blue-900 min-h-[66.667vh]">
         <div className="flex items-center justify-center min-h-[66.667vh] p-4">
-          <div className="w-full max-w-2xl bg-white/95 backdrop-blur-sm p-8 rounded-lg shadow-lg">
-            <h1 className="text-3xl font-light text-gray-900 mb-6">Contact Us</h1>
+          <div className="w-full max-w-2xl p-8 rounded-lg">
+            <h1 className="text-3xl font-light text-white mb-6">Contact Us</h1>
             
             <form action="https://formspree.io/f/mqaevklj" method="POST" className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">
-                    First Name: <span className="text-red-500">*</span>
+                  <label htmlFor="firstName" className="block text-sm font-medium text-white">
+                    First Name: <span className="text-red-300">*</span>
                   </label>
                   <input
                     type="text"
                     name="firstName"
                     id="firstName"
                     required
-                    className="mt-1 block w-full border-b border-gray-300 focus:border-blue-500 focus:ring-0 bg-transparent"
+                    className="mt-1 block w-full border-b border-white focus:border-white focus:ring-0 bg-transparent text-white placeholder-white/50"
                   />
                 </div>
                 
                 <div>
-                  <label htmlFor="lastName" className="block text-sm font-medium text-gray-700">
-                    Last Name: <span className="text-red-500">*</span>
+                  <label htmlFor="lastName" className="block text-sm font-medium text-white">
+                    Last Name: <span className="text-red-300">*</span>
                   </label>
                   <input
                     type="text"
                     name="lastName"
                     id="lastName"
                     required
-                    className="mt-1 block w-full border-b border-gray-300 focus:border-blue-500 focus:ring-0 bg-transparent"
+                    className="mt-1 block w-full border-b border-white focus:border-white focus:ring-0 bg-transparent text-white placeholder-white/50"
                   />
                 </div>
                 
                 <div>
-                  <label htmlFor="organization" className="block text-sm font-medium text-gray-700">
+                  <label htmlFor="organization" className="block text-sm font-medium text-white">
                     Organization:
                   </label>
                   <input
                     type="text"
                     name="organization"
                     id="organization"
-                    className="mt-1 block w-full border-b border-gray-300 focus:border-blue-500 focus:ring-0 bg-transparent"
+                    className="mt-1 block w-full border-b border-white focus:border-white focus:ring-0 bg-transparent text-white placeholder-white/50"
                   />
                 </div>
                 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                    Email: <span className="text-red-500">*</span>
+                  <label htmlFor="email" className="block text-sm font-medium text-white">
+                    Email: <span className="text-red-300">*</span>
                   </label>
                   <input
                     type="email"
                     name="email"
                     id="email"
                     required
-                    className="mt-1 block w-full border-b border-gray-300 focus:border-blue-500 focus:ring-0 bg-transparent"
+                    className="mt-1 block w-full border-b border-white focus:border-white focus:ring-0 bg-transparent text-white placeholder-white/50"
                   />
                 </div>
                 
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
+                  <label htmlFor="phone" className="block text-sm font-medium text-white">
                     Phone:
                   </label>
                   <input
                     type="tel"
                     name="phone"
                     id="phone"
-                    className="mt-1 block w-full border-b border-gray-300 focus:border-blue-500 focus:ring-0 bg-transparent"
+                    className="mt-1 block w-full border-b border-white focus:border-white focus:ring-0 bg-transparent text-white placeholder-white/50"
                   />
                 </div>
                 
                 <div>
-                  <label htmlFor="country" className="block text-sm font-medium text-gray-700">
+                  <label htmlFor="country" className="block text-sm font-medium text-white">
                     Country
                   </label>
                   <select
                     name="country"
                     id="country"
-                    className="mt-1 block w-full border-b border-gray-300 focus:border-blue-500 focus:ring-0 bg-transparent"
+                    className="mt-1 block w-full border-b border-white focus:border-white focus:ring-0 bg-transparent text-white"
                   >
-                    <option value="">Select Country</option>
-                    <option value="United States">United States</option>
-                    <option value="Canada">Canada</option>
-                    <option value="United Kingdom">United Kingdom</option>
-                    <option value="Australia">Australia</option>
-                    <option value="Germany">Germany</option>
-                    <option value="France">France</option>
-                    <option value="Japan">Japan</option>
-                    <option value="China">China</option>
-                    <option value="Other">Other</option>
+                    <option value="" className="bg-blue-900">Select Country</option>
+                    <option value="United States" className="bg-blue-900">United States</option>
+                    <option value="Canada" className="bg-blue-900">Canada</option>
+                    <option value="United Kingdom" className="bg-blue-900">United Kingdom</option>
+                    <option value="Australia" className="bg-blue-900">Australia</option>
+                    <option value="Germany" className="bg-blue-900">Germany</option>
+                    <option value="France" className="bg-blue-900">France</option>
+                    <option value="Japan" className="bg-blue-900">Japan</option>
+                    <option value="China" className="bg-blue-900">China</option>
+                    <option value="Other" className="bg-blue-900">Other</option>
                   </select>
                 </div>
               </div>
               
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+                <label htmlFor="message" className="block text-sm font-medium text-white">
                   Message field:
                 </label>
                 <textarea
                   name="message"
                   id="message"
                   rows={4}
-                  className="mt-1 block w-full border-b border-gray-300 focus:border-blue-500 focus:ring-0 bg-transparent resize-none"
+                  className="mt-1 block w-full border-b border-white focus:border-white focus:ring-0 bg-transparent text-white resize-none"
                 />
               </div>
               
               <div className="flex justify-center">
                 <button
                   type="submit"
-                  className="px-12 py-3 bg-teal-600 text-white rounded-md uppercase text-sm tracking-wider hover:bg-teal-700 transition-colors"
+                  className="px-12 py-3 bg-white/20 backdrop-blur-sm text-white rounded-md uppercase text-sm tracking-wider hover:bg-white/30 transition-colors border border-white/50"
                 >
                   SUBMIT
                 </button>
