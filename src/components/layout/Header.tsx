@@ -14,8 +14,8 @@ export default function Header() {
     const isActive = pathname === path
     return `block transition-colors ${
       isActive 
-        ? 'text-gray-900 font-medium bg-gray-100 px-4 py-2 rounded-md' 
-        : 'text-gray-800 hover:text-black hover:bg-gray-50 px-4 py-2 rounded-md'
+        ? 'text-gray-900 font-medium bg-gray-100/90 px-4 py-2 rounded-md' 
+        : 'text-gray-800 hover:text-black hover:bg-gray-100/70 px-4 py-2 rounded-md'
     }`
   }
 
@@ -52,7 +52,7 @@ export default function Header() {
         </button>
 
         <nav 
-          className={`absolute top-10 md:top-12 right-0 bg-white/95 backdrop-blur-sm rounded-lg shadow-lg p-4 md:p-6 min-w-[180px] md:min-w-[200px] transition-all duration-200 ${
+          className={`absolute top-10 md:top-12 right-0 bg-white/50 backdrop-blur-sm rounded-lg shadow-lg p-4 md:p-6 min-w-[180px] md:min-w-[200px] transition-all duration-200 ${
             isMenuOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible translate-y-[-10px]'
           }`}
           onMouseEnter={() => setIsMenuOpen(true)}
@@ -62,7 +62,7 @@ export default function Header() {
             <li>
               <Link 
                 href="/" 
-                className={`${getLinkClassName('/')} text-sm md:text-base`}
+                className={`${getLinkClassName('/')} text-sm md:text-base font-medium`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
@@ -71,7 +71,7 @@ export default function Header() {
             <li>
               <Link 
                 href="/about" 
-                className={`${getLinkClassName('/about')} text-sm md:text-base`}
+                className={`${getLinkClassName('/about')} text-sm md:text-base font-medium`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
@@ -80,7 +80,7 @@ export default function Header() {
             <li>
               <Link 
                 href="/contact" 
-                className={`${getLinkClassName('/contact')} text-sm md:text-base`}
+                className={`${getLinkClassName('/contact')} text-sm md:text-base font-medium`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact
@@ -89,7 +89,7 @@ export default function Header() {
             <li>
               <Link 
                 href="/investor-portal" 
-                className={`${getLinkClassName('/investor-portal')} text-sm md:text-base`}
+                className={`${getLinkClassName('/investor-portal')} text-sm md:text-base font-medium`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Investor Portal
