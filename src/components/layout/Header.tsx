@@ -12,10 +12,10 @@ export default function Header() {
 
   const getLinkClassName = (path: string) => {
     const isActive = pathname === path
-    return `block transition-colors ${
+    return `block px-4 py-2 transition-colors ${
       isActive 
-        ? 'text-white font-medium border-b-2 border-white px-4 py-2 rounded-md' 
-        : 'text-white hover:text-gray-200 hover:border-b border-white/70 px-4 py-2 rounded-md'
+        ? 'text-white font-medium' 
+        : 'text-white hover:text-gray-200'
     }`
   }
 
@@ -65,7 +65,9 @@ export default function Header() {
                 className={`${getLinkClassName('/')} text-sm md:text-base font-medium`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                Home
+                <span className={pathname === '/' ? 'border-b-2 border-white' : 'hover:border-b hover:border-white/70'}>
+                  Home
+                </span>
               </Link>
             </li>
             <li>
@@ -74,7 +76,9 @@ export default function Header() {
                 className={`${getLinkClassName('/about')} text-sm md:text-base font-medium`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                About
+                <span className={pathname === '/about' ? 'border-b-2 border-white' : 'hover:border-b hover:border-white/70'}>
+                  About
+                </span>
               </Link>
             </li>
             <li>
@@ -83,7 +87,9 @@ export default function Header() {
                 className={`${getLinkClassName('/contact')} text-sm md:text-base font-medium`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                Contact
+                <span className={pathname === '/contact' ? 'border-b-2 border-white' : 'hover:border-b hover:border-white/70'}>
+                  Contact
+                </span>
               </Link>
             </li>
             <li>
@@ -92,7 +98,9 @@ export default function Header() {
                 className={`${getLinkClassName('/investor-portal')} text-sm md:text-base font-medium`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                Investor Portal
+                <span className={pathname === '/investor-portal' ? 'border-b-2 border-white' : 'hover:border-b hover:border-white/70'}>
+                  Investor Portal
+                </span>
               </Link>
             </li>
           </ul>
