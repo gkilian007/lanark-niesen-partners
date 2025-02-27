@@ -24,7 +24,7 @@ export default function InvestorPortal() {
       <div className="fixed inset-0 -z-10">
         <div className="relative w-full h-full">
           <Image
-            src="https://images4.imagebam.com/62/ca/cc/MEZVX3T_o.jpg"
+            src="https://images4.imagebam.com/32/35/ed/MEZY4JX_o.jpg"
             alt="Background"
             fill
             priority
