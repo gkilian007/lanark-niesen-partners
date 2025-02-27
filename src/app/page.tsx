@@ -43,17 +43,19 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="relative py-16 bg-gray-900 flex items-center justify-center">
-        <div className="text-center">
-          <h2 className="text-2xl md:text-3xl text-white font-light mb-6">
-            Get in Touch
-          </h2>
-          <Link 
-            href="/contact"
-            className="inline-block px-8 py-3 text-lg bg-white text-gray-900 rounded-lg hover:bg-gray-100 transition-colors"
-          >
-            Contact Us
-          </Link>
+      <section className="relative py-10 bg-gray-900">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <h2 className="text-xl md:text-2xl text-white font-light">
+              Modern Perspective. Timeless Values. Relentless Execution.
+            </h2>
+            <Link 
+              href="/contact"
+              className="inline-block px-8 py-3 text-lg bg-white text-gray-900 rounded-lg hover:bg-gray-100 transition-colors"
+            >
+              Contact Us
+            </Link>
+          </div>
         </div>
       </section>
     </main>
