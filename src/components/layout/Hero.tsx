@@ -7,7 +7,7 @@ export default function Hero() {
     <div className="relative h-screen w-full">
       <div className="absolute inset-0">
         <Image
-          src="https://images4.imagebam.com/0b/94/76/MEZVWTK_o.jpg"
+          src="https://images4.imagebam.com/37/1d/42/MEZY4HJ_o.jpg"
           alt="Mountain landscape"
           fill
           priority
