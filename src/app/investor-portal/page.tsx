@@ -23,8 +23,8 @@ export default function InvestorPortal() {
       {/* Header Image - 1/3 height */}
       <div className="relative w-full h-[33.333vh]">
         <Image
-          src="https://images4.imagebam.com/32/35/ed/MEZY4JX_o.jpg"
-          alt="Building under construction header"
+          src="https://images4.imagebam.com/db/6f/53/MEZY4HI_o.jpg"
+          alt="Investor Portal header"
           fill
           priority
           sizes="100vw"
