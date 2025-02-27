@@ -9,12 +9,17 @@ export default function Home() {
       <Header />
       
       {/* Hero Section */}
-      <section className="h-screen">
+      <section className="h-screen relative">
         <Hero />
+        
+        {/* Transition gradient overlay */}
+        <div className="absolute bottom-0 left-0 right-0 h-32 md:h-48 lg:h-64 
+                        bg-gradient-to-b from-transparent via-black/50 to-black/70 z-10"></div>
       </section>
 
       {/* About Section */}
-      <section className="relative h-screen">
+      <section className="relative h-screen -mt-24 md:-mt-32 lg:-mt-48">
+        {/* Image */}
         <Image
           src="https://images4.imagebam.com/32/35/ed/MEZY4JX_o.jpg"
           alt="Building under construction"
@@ -24,11 +29,18 @@ export default function Home() {
           quality={75}
           className="object-cover"
           placeholder="blur"
-          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVigAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx4eHRoaHSQtJSAyVC08MTAxMTIwPURBPj1HQTY4RjE5TU9PQEdGRVBCR0hDRkFATEr/2wBDAR"
+          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx4eHRoaHSQtJSAyVC08MTAxMTIwPURBPj1HQTY4RjE5TU9PQEdGRVBCR0hDRkFATEr/2wBDAR"
         />
+        
+        {/* Top gradient overlay for blending with the hero section */}
+        <div className="absolute top-0 left-0 right-0 h-32 md:h-48 lg:h-64 
+                        bg-gradient-to-t from-transparent via-black/70 to-black/80 z-10"></div>
+        
+        {/* Base overlay */}
         <div className="absolute inset-0 bg-black/55" />
         
-        <div className="absolute inset-0 flex items-center justify-center">
+        {/* Content */}
+        <div className="absolute inset-0 flex items-center justify-center pt-24 z-20">
           <div className="max-w-4xl px-6">
             <div className="text-lg md:text-xl text-white leading-relaxed space-y-6">
               <p>
