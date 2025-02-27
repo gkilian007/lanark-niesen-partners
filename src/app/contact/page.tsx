@@ -34,8 +34,8 @@ export default function Contact() {
         />
       </div>
       
-      {/* Dark blue background for bottom 2/3 */}
-      <div className="relative bg-blue-900 min-h-[66.667vh]">
+      {/* Dark purple background for bottom 2/3 */}
+      <div className="relative bg-[#251a40] min-h-[66.667vh]">
         <div className="flex items-center justify-center min-h-[66.667vh] p-4">
           <div className="w-full max-w-2xl p-8 rounded-lg">
             <h1 className="text-3xl font-light text-white mb-6">Contact Us</h1>
@@ -114,16 +114,16 @@ export default function Contact() {
                     id="country"
                     className="mt-1 block w-full border-b border-white focus:border-white focus:ring-0 bg-transparent text-white"
                   >
-                    <option value="" className="bg-blue-900">Select Country</option>
-                    <option value="United States" className="bg-blue-900">United States</option>
-                    <option value="Canada" className="bg-blue-900">Canada</option>
-                    <option value="United Kingdom" className="bg-blue-900">United Kingdom</option>
-                    <option value="Australia" className="bg-blue-900">Australia</option>
-                    <option value="Germany" className="bg-blue-900">Germany</option>
-                    <option value="France" className="bg-blue-900">France</option>
-                    <option value="Japan" className="bg-blue-900">Japan</option>
-                    <option value="China" className="bg-blue-900">China</option>
-                    <option value="Other" className="bg-blue-900">Other</option>
+                    <option value="" className="bg-[#251a40]">Select Country</option>
+                    <option value="United States" className="bg-[#251a40]">United States</option>
+                    <option value="Canada" className="bg-[#251a40]">Canada</option>
+                    <option value="United Kingdom" className="bg-[#251a40]">United Kingdom</option>
+                    <option value="Australia" className="bg-[#251a40]">Australia</option>
+                    <option value="Germany" className="bg-[#251a40]">Germany</option>
+                    <option value="France" className="bg-[#251a40]">France</option>
+                    <option value="Japan" className="bg-[#251a40]">Japan</option>
+                    <option value="China" className="bg-[#251a40]">China</option>
+                    <option value="Other" className="bg-[#251a40]">Other</option>
                   </select>
                 </div>
               </div>
