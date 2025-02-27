@@ -49,13 +49,13 @@ export default function Home() {
             <h2 className="text-xl md:text-2xl text-white font-light">
               Modern Perspective. Timeless Values. Relentless Execution.
             </h2>
-            <Link href="/" className="flex items-center relative w-[240px] h-28 md:w-[360px] md:h-40">
+            <Link href="/" className="flex items-center relative w-[192px] h-22 md:w-[288px] md:h-32">
               <Image
                 src="https://images4.imagebam.com/9f/62/cd/MEZVWT5_o.png"
                 alt="Lanark Niesen Partners Logo"
                 fill
                 priority
-                sizes="(max-width: 768px) 240px, 360px"
+                sizes="(max-width: 768px) 192px, 288px"
                 className="object-contain"
                 quality={90}
               />
