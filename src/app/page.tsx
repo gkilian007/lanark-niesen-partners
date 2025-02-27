@@ -16,7 +16,7 @@ export default function Home() {
       {/* About Section */}
       <section className="relative h-screen">
         <Image
-          src="https://images4.imagebam.com/f3/ec/37/MEZVX2O_o.jpg"
+          src="https://images4.imagebam.com/32/35/ed/MEZY4JX_o.jpg"
           alt="Building under construction"
           fill
           priority
