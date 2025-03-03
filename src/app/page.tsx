@@ -43,7 +43,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="relative py-10 bg-[#251a40]">
+      <section className="relative py-10 bg-[#001E60]">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <h2 className="text-xl md:text-2xl text-white font-light">
