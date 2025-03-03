@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Menu as MenuIcon, X } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -8,7 +8,47 @@ import { usePathname } from 'next/navigation'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isHeaderVisible, setIsHeaderVisible] = useState(true)
+  const [isMobile, setIsMobile] = useState(false)
   const pathname = usePathname()
+
+  // Check if mobile and handle scroll behavior
+  useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth <= 1022)
+    }
+    
+    // Initial check
+    checkIfMobile()
+    
+    // Handle window resize
+    window.addEventListener('resize', checkIfMobile)
+    
+    // Handle scroll for hiding header
+    const handleScroll = () => {
+      if (!isMobile) {
+        setIsHeaderVisible(true)
+        return
+      }
+      
+      // Get the first section height (approx. viewport height)
+      const firstSectionHeight = window.innerHeight * 0.9
+      
+      // Hide header after scrolling past the first section
+      if (window.scrollY > firstSectionHeight) {
+        setIsHeaderVisible(false)
+      } else {
+        setIsHeaderVisible(true)
+      }
+    }
+    
+    window.addEventListener('scroll', handleScroll)
+    
+    return () => {
+      window.removeEventListener('resize', checkIfMobile)
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [isMobile])
 
   const getLinkClassName = (path: string) => {
     const isActive = pathname === path
@@ -23,7 +63,7 @@ export default function Header() {
   const isLightPage = pathname === '/investor-portal' || pathname === '/contact'
 
   return (
-    <header className="fixed w-full -top-3 md:-top-6 z-50 flex justify-between items-center px-4 md:px-6">
+    <header className={`fixed w-full -top-3 md:-top-6 z-50 flex justify-between items-center px-4 md:px-6 transition-opacity duration-300 ${isHeaderVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
       <Link href="/" className="flex items-center relative w-[200px] h-24 md:w-[400px] md:h-48">
         <Image
           src="https://images4.imagebam.com/f2/64/a2/ME101RMM_o.png"
