@@ -31,11 +31,19 @@ export default function Header() {
         return
       }
       
-      // Get the first section height (approx. viewport height)
-      const firstSectionHeight = window.innerHeight * 0.9
+      // Different scroll threshold based on the page
+      let scrollThreshold;
       
-      // Hide header after scrolling past the first section
-      if (window.scrollY > firstSectionHeight) {
+      if (pathname === '/contact' || pathname === '/investor-portal') {
+        // Contact and Investor Portal pages have 1/3 height header images
+        scrollThreshold = window.innerHeight * 0.33;
+      } else {
+        // Home and other pages have full-height first sections
+        scrollThreshold = window.innerHeight * 0.9;
+      }
+      
+      // Hide header after scrolling past the threshold
+      if (window.scrollY > scrollThreshold) {
         setIsHeaderVisible(false)
       } else {
         setIsHeaderVisible(true)
@@ -44,11 +52,14 @@ export default function Header() {
     
     window.addEventListener('scroll', handleScroll)
     
+    // Run the scroll handler once on mount to set initial state
+    handleScroll()
+    
     return () => {
       window.removeEventListener('resize', checkIfMobile)
       window.removeEventListener('scroll', handleScroll)
     }
-  }, [isMobile])
+  }, [isMobile, pathname])
 
   const getLinkClassName = (path: string) => {
     const isActive = pathname === path
