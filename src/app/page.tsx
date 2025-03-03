@@ -44,13 +44,13 @@ export default function Home() {
       {/* Contact Section */}
       <section className="relative py-12 bg-[#001E60]">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <div className="max-w-lg mx-auto lg:mx-0">
-              <h2 className="text-xl md:text-2xl text-white font-light text-center lg:text-left">
+          <div className="grid grid-cols-1 tablet:grid-cols-2 gap-8 items-center">
+            <div className="max-w-lg mx-auto tablet:mx-0">
+              <h2 className="text-xl md:text-2xl text-white font-light text-center tablet:text-left">
                 Modern Perspective. Timeless Values. Relentless Execution.
               </h2>
             </div>
-            <div className="flex justify-center lg:justify-end">
+            <div className="flex justify-center tablet:justify-end">
               <Link 
                 href="/" 
                 className="block relative 
@@ -58,7 +58,7 @@ export default function Home() {
                   xs:w-[140px] xs:h-[72px]
                   sm:w-[160px] sm:h-[80px] 
                   md:w-[180px] md:h-[88px] 
-                  lg:w-[200px] lg:h-[96px] 
+                  tablet:w-[200px] tablet:h-[96px] 
                   xl:w-[220px] xl:h-[104px] 
                   2xl:w-[240px] 2xl:h-[112px] 
                   3xl:w-[260px] 3xl:h-[120px]"

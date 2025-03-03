@@ -13,6 +13,7 @@ const config: Config = {
       },
       screens: {
         'xs': '480px',
+        'tablet': '1022px',
         '3xl': '1920px',
       },
     },
