@@ -74,21 +74,19 @@ export default function InvestorPortal() {
                 </div>
               </div>
               
-              <div className="flex justify-center gap-4 pt-4">
-                <button
-                  type="submit"
-                  className="px-12 py-3 bg-[#001E60] text-white rounded-md uppercase text-sm tracking-wider hover:bg-[#001E60]/80 transition-colors border border-white/50"
+              <div className="flex flex-col sm:flex-row gap-4 mt-8">
+                <a
+                  href="#"
+                  className="px-8 py-3 bg-white/20 backdrop-blur-sm text-white hover:bg-white/30 transition-all text-center rounded-lg"
                 >
-                  LOG IN
-                </button>
-                
-                <button
-                  type="button"
-                  onClick={() => console.log('Sign up clicked')}
-                  className="px-12 py-3 bg-[#001E60] text-white rounded-md uppercase text-sm tracking-wider hover:bg-[#001E60]/80 transition-colors border border-white/50"
+                  Log In
+                </a>
+                <a
+                  href="#"
+                  className="px-8 py-3 bg-white/20 backdrop-blur-sm text-white hover:bg-white/30 transition-all text-center rounded-lg"
                 >
-                  SIGN UP
-                </button>
+                  Sign Up
+                </a>
               </div>
 
               <div className="text-center mt-6">
