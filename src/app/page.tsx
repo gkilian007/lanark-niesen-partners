@@ -51,7 +51,7 @@ export default function Home() {
             </h2>
             <Link href="/" className="flex items-center relative w-[192px] h-22 md:w-[288px] md:h-32">
               <Image
-                src="https://images4.imagebam.com/04/a2/61/MEZY5C1_o.png"
+                src="https://images4.imagebam.com/f2/64/a2/ME101RMM_o.png"
                 alt="Lanark Niesen Partners Logo"
                 fill
                 priority
