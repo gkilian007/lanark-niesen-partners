@@ -44,25 +44,26 @@ export default function Home() {
       {/* Contact Section */}
       <section className="relative py-12 bg-[#001E60]">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="max-w-lg mx-auto lg:mx-0">
-              <h2 className="text-xl md:text-2xl text-white font-light text-center lg:text-left">
-                Modern Perspective. Timeless Values. Relentless Execution.
-              </h2>
-            </div>
-            <div className="flex justify-center lg:justify-end">
-              <Link href="/" className="block relative w-[240px] h-28 md:w-[320px] md:h-36">
-                <Image
-                  src="https://images4.imagebam.com/f2/64/a2/ME101RMM_o.png"
-                  alt="Lanark Niesen Partners Logo"
-                  fill
-                  priority
-                  sizes="(max-width: 768px) 240px, 320px"
-                  className="object-contain"
-                  quality={90}
-                />
-              </Link>
-            </div>
+          {/* Text Section */}
+          <div className="text-center mb-12">
+            <h2 className="text-xl md:text-2xl text-white font-light max-w-2xl mx-auto">
+              Modern Perspective. Timeless Values. Relentless Execution.
+            </h2>
+          </div>
+          
+          {/* Logo Section - separated completely from text */}
+          <div className="flex justify-center">
+            <Link href="/" className="block relative w-[240px] h-28 md:w-[320px] md:h-36">
+              <Image
+                src="https://images4.imagebam.com/f2/64/a2/ME101RMM_o.png"
+                alt="Lanark Niesen Partners Logo"
+                fill
+                priority
+                sizes="(max-width: 768px) 240px, 320px"
+                className="object-contain"
+                quality={90}
+              />
+            </Link>
           </div>
         </div>
       </section>
