@@ -42,8 +42,8 @@ export default function Header() {
         <button
           className={`flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 backdrop-blur-sm rounded-lg transition-all ${
             isLightPage 
-              ? 'text-gray-800 bg-gray-200/80 group-hover:bg-gray-300/80' 
-              : 'text-white bg-white/20 group-hover:bg-white/30'
+              ? 'text-white bg-[#001E60] group-hover:bg-[#001E60]/90' 
+              : 'text-white bg-[#001E60] group-hover:bg-[#001E60]/90'
           }`}
           onMouseEnter={() => setIsMenuOpen(true)}
         >
