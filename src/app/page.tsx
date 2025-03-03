@@ -53,14 +53,29 @@ export default function Home() {
             <div className="flex justify-center lg:justify-end">
               <Link 
                 href="/" 
-                className="block relative w-[160px] h-20 sm:w-[180px] sm:h-24 md:w-[200px] md:h-28 lg:w-[240px] lg:h-32 xl:w-[280px] xl:h-36"
+                className="block relative 
+                  w-[120px] h-[64px] 
+                  xs:w-[140px] xs:h-[72px]
+                  sm:w-[160px] sm:h-[80px] 
+                  md:w-[180px] md:h-[88px] 
+                  lg:w-[200px] lg:h-[96px] 
+                  xl:w-[220px] xl:h-[104px] 
+                  2xl:w-[240px] 2xl:h-[112px] 
+                  3xl:w-[260px] 3xl:h-[120px]"
               >
                 <Image
                   src="https://images4.imagebam.com/f2/64/a2/ME101RMM_o.png"
                   alt="Lanark Niesen Partners Logo"
                   fill
                   priority
-                  sizes="(max-width: 640px) 160px, (max-width: 768px) 180px, (max-width: 1024px) 200px, (max-width: 1280px) 240px, 280px"
+                  sizes="(max-width: 480px) 120px, 
+                         (max-width: 639px) 140px, 
+                         (max-width: 767px) 160px, 
+                         (max-width: 1023px) 180px, 
+                         (max-width: 1279px) 200px, 
+                         (max-width: 1535px) 220px, 
+                         (max-width: 1919px) 240px, 
+                         260px"
                   className="object-contain"
                   quality={90}
                 />
