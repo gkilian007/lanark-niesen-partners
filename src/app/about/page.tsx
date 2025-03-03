@@ -9,7 +9,7 @@ export default function About() {
       <Header />
       <div className="relative h-screen w-full">
         <Image
-          src="https://images4.imagebam.com/f3/ec/37/MEZVX2O_o.jpg"
+          src="https://images4.imagebam.com/f5/ca/2c/ME101RN4_o.jpg"
           alt="Building under construction"
           fill
           priority
