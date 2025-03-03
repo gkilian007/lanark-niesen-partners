@@ -36,7 +36,7 @@ export default function InvestorPortal() {
       </div>
       
       {/* Dark purple background for bottom 2/3 */}
-      <div className="relative bg-[#251a40] min-h-[66.667vh]">
+      <div className="relative bg-[#001E60] min-h-[66.667vh]">
         <div className="flex items-center justify-center min-h-[66.667vh] p-4">
           <div className="w-full max-w-2xl p-8 rounded-lg">
             <h1 className="text-3xl font-light text-white mb-6">Investor Portal</h1>
