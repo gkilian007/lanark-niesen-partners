@@ -22,7 +22,7 @@ export default function About() {
         
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="max-w-4xl px-6">
-            <div className="text-lg md:text-xl text-black leading-relaxed space-y-6 bg-white/70 p-8 rounded-lg backdrop-blur-sm">
+            <div className="text-lg md:text-xl text-black leading-relaxed space-y-6 bg-white/70 p-8 md:pt-8 pt-[28px] rounded-lg backdrop-blur-sm">
               <p>
                 Lanark Niesen Partners serves as the combined family office for the Tarlton and Dearborn families. With investments primarily in commercial real estate, software technology and media properties, Lanark Niesen focuses on investments that are simultaneously doing good while also achieving alpha.
               </p>
