@@ -32,7 +32,7 @@ export default function SuccessPage() {
               <div className="mt-10">
                 <Link 
                   href="/"
-                  className="inline-block mt-4 px-8 py-3 bg-white/20 backdrop-blur-sm text-white hover:bg-white/30 rounded transition-colors duration-300"
+                  className="inline-block mt-4 px-8 py-3 bg-white/20 backdrop-blur-sm text-black hover:bg-white/30 rounded transition-colors duration-300"
                 >
                   Return to Home
                 </Link>
