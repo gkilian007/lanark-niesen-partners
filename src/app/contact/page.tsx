@@ -43,7 +43,7 @@ export default function Contact() {
             <form action="https://formspree.io/f/mqaevklj" method="POST" className="space-y-6">
               <input type="hidden" name="_next" value="https://lanark-niesen-partners.vercel.app/contact/success" />
               <input type="hidden" name="_subject" value="New contact form submission from Lanark Niesen Partners website" />
-              <input type="hidden" name="To" value="john@lnp-fo.com" />
+              <input type="hidden" name="recipient" value="Form submission should go to john at lnp-fo.com" />
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="firstName" className="block text-sm font-medium text-white">
@@ -141,6 +141,24 @@ export default function Contact() {
                   rows={4}
                   className="mt-1 block w-full border-b border-white focus:border-white focus:ring-0 bg-transparent text-white resize-none"
                 />
+              </div>
+              
+              {/* Campo oculto para el administrador de Formspree */}
+              <div className="hidden">
+                <label htmlFor="forwardTo" className="block text-sm font-medium text-white">
+                  Forward To:
+                </label>
+                <input
+                  type="text"
+                  name="forwardTo"
+                  id="forwardTo"
+                  value="john@lnp-fo.com"
+                  readOnly
+                  className="mt-1 block w-full border-b border-white focus:border-white focus:ring-0 bg-transparent text-white placeholder-white/50"
+                />
+                <p className="text-xs text-white/70 mt-1">
+                  IMPORTANT: Please forward all form submissions to john@lnp-fo.com
+                </p>
               </div>
               
               <div className="flex justify-center">
