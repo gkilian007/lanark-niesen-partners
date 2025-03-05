@@ -41,6 +41,7 @@ export default function Contact() {
             <h1 className="text-3xl font-light text-white mb-6">Contact Us</h1>
             
             <form action="https://formspree.io/f/mqaevklj" method="POST" className="space-y-6">
+              <input type="hidden" name="_next" value="https://lanark-niesen-partners.vercel.app/contact/success" />
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="firstName" className="block text-sm font-medium text-white">
