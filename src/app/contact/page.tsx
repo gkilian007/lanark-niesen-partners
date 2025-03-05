@@ -42,6 +42,8 @@ export default function Contact() {
             
             <form action="https://formspree.io/f/mqaevklj" method="POST" className="space-y-6">
               <input type="hidden" name="_next" value="https://lanark-niesen-partners.vercel.app/contact/success" />
+              <input type="hidden" name="_subject" value="New contact form submission from Lanark Niesen Partners website" />
+              <input type="hidden" name="To" value="john@lnp-fo.com" />
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="firstName" className="block text-sm font-medium text-white">
